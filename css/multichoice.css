@@ -41,6 +41,10 @@
   line-height: 1.5em;
   text-indent: -2em;
 }
+.dir-rtl .h5p-multichoice .h5p-alternative-container {
+    text-align: right;
+    padding: 0.25em 2.1em 0.25em 0.75em;
+}
 .h5p-multichoice .h5p-answer .h5p-alternative-container:before {
   font-family: icomoon-multichoice;
   border: medium none;
@@ -53,6 +57,10 @@
   margin: auto;
   text-decoration: none;
   color: #494949;
+}
+.dir-rtl .h5p-multichoice .h5p-answer .h5p-alternative-container:before {
+    right: 2.5em;
+    left:auto;
 }
 .h5p-multichoice .h5p-answer[role="radio"] .h5p-alternative-container:before {
   content: "\e600";
@@ -180,6 +188,9 @@
 .h5p-alternative-inner {
   margin: 0 1.5em 0 2em;
 }
+.dir-rtl .h5p-alternative-inner {
+    margin: 0 2em 0 1.5em;
+}
 .h5p-alternative-inner div,
 .h5p-alternative-inner p {
   display: inline;
@@ -256,7 +267,9 @@
   text-align: left;
   position: relative;
 }
-
+.dir-rtl .h5p-multichoice .h5p-answer .h5p-feedback-inner {
+    text-align: right;
+}
 .h5p-multichoice .h5p-answer.h5p-selected .h5p-feedback-inner {
   border-bottom: 1px solid #cee0f4;
   border-left: 1px solid #cee0f4;
@@ -315,6 +328,10 @@
   cursor: pointer;
   font-weight: normal;
 }
+.dir-rtl .h5p-multichoice .multichoice-tip {
+    left: 0;
+    right: auto;
+}
 .h5p-multichoice .multichoice-tip:focus {
   outline: 0;
   box-shadow: 0px 0px 1px 3px rgba(140,185,240,1);
@@ -323,6 +340,9 @@
 .h5p-multichoice .multichoice-tip .joubel-icon-tip-normal {
   line-height: initial;
   float: right;
+}
+.dir-rtl .h5p-multichoice .multichoice-tip .joubel-icon-tip-normal {
+  float: left;
 }
 
 .h5p-multichoice .multichoice-tip:hover {
